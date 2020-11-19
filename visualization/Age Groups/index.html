@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Team Stat</title>
+    <!-- including ECharts file -->
+    <script src="echarts.js"></script>
+</head>
+<body>
+    <div id="main" style="width: 1000px;height:550px;"></div>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('main'), 'light');
+
+        option = {
+    dataset: {
+        source: [
+            ['h', 'amount', 'product'],
+            [71640, 71640, 'A'],
+            [35025, 35025, 'B'],
+            [56270, 56270, 'C'],
+            [76172, 76172, 'D'],
+            [54574, 54574, 'E'],
+            [70151, 70151, 'F'],
+            [51095, 51095, 'G'],
+            [37111, 37111, 'H']
+        ]
+    },
+    grid: {containLabel: true},
+    yAxis: {name: 'amount'},
+    xAxis: {type: 'category'},
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {            
+            type: 'shadow'        
+        }
+    },
+    title: [{
+        left: 100,
+        text: '전체 연령대'
+    }],
+    visualMap: {
+        orient: 'horizontal',
+        left: 'center',
+        min: 37111,
+        max: 76172,
+        text: ['Max','Min'],
+        // Map the score column to color
+        dimension: 0,
+        inRange: {
+            color: ['#ff5f6d', '#ffc371']
+            
+        }
+    },
+    series: [
+        {
+            type: 'bar',
+            encode: {
+                // Map the "amount" column to X axis.
+                y: 'amount',
+                // Map the "product" column to Y axis
+                x: 'product'
+            }
+        }
+    ]
+};
+
+        
+
+
+        // use configuration item and data specified to show chart
+        myChart.setOption(option);
+    </script>
+</body>
+</html>
