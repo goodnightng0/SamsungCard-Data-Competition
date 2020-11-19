@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/vintage.js"></script>
+
+</head>
+<body>
+    <div id="4eaae0e57da741a79dc11b0020ea545b" class="chart-container" style="width:1200px; height:650px;"></div>
+    <script>
+        var chart_4eaae0e57da741a79dc11b0020ea545b = echarts.init(
+            document.getElementById('4eaae0e57da741a79dc11b0020ea545b'), 'vintage', {renderer: 'canvas'});
+        var option_4eaae0e57da741a79dc11b0020ea545b = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "pie",
+            "name": "2019",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\uc804\ubb38\ubab0",
+                    "value": 9069
+                },
+                {
+                    "name": "\ub514\uc800\ud2b8",
+                    "value": 6593
+                },
+                {
+                    "name": "\uc624\ud508\ub9c8\ucf13/\uc18c\uc15c",
+                    "value": 6528
+                },
+                {
+                    "name": "\ud560\uc778\uc810",
+                    "value": 5428
+                },
+                {
+                    "name": "\ubdf0\ud2f0",
+                    "value": 1882
+                },
+                {
+                    "name": "\ucde8\ubbf8",
+                    "value": 1564
+                },
+                {
+                    "name": "\uc885\ud569\ubab0",
+                    "value": 1478
+                },
+                {
+                    "name": "\ud638\ud154/\uc219\ubc15",
+                    "value": 757
+                },
+                {
+                    "name": "\ud56d\uacf5/\uc5ec\ud589\uc0ac",
+                    "value": 662
+                },
+                {
+                    "name": "\uba74\uc138\uc810",
+                    "value": 266
+                }
+            ],
+            "radius": [
+                "28%",
+                "61%"
+            ],
+            "center": [
+                "28%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": "{b}: {c}"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "pie",
+            "name": "2020",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\uc804\ubb38\ubab0",
+                    "value": 8437
+                },
+                {
+                    "name": "\uc624\ud508\ub9c8\ucf13/\uc18c\uc15c",
+                    "value": 6514
+                },
+                {
+                    "name": "\ub514\uc800\ud2b8",
+                    "value": 5682
+                },
+                {
+                    "name": "\ud560\uc778\uc810",
+                    "value": 3253
+                },
+                {
+                    "name": "\ubdf0\ud2f0",
+                    "value": 1315
+                },
+                {
+                    "name": "\uc885\ud569\ubab0",
+                    "value": 1141
+                },
+                {
+                    "name": "\ucde8\ubbf8",
+                    "value": 1016
+                },
+                {
+                    "name": "\ud638\ud154/\uc219\ubc15",
+                    "value": 493
+                },
+                {
+                    "name": "\ud56d\uacf5/\uc5ec\ud589\uc0ac",
+                    "value": 220
+                },
+                {
+                    "name": "\uba74\uc138\uc810",
+                    "value": 33
+                }
+            ],
+            "radius": [
+                "30%",
+                "61%"
+            ],
+            "center": [
+                "73%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": "{b}: {c}"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\uc804\ubb38\ubab0",
+                "\ub514\uc800\ud2b8",
+                "\uc624\ud508\ub9c8\ucf13/\uc18c\uc15c",
+                "\ud560\uc778\uc810",
+                "\ubdf0\ud2f0",
+                "\ucde8\ubbf8",
+                "\uc885\ud569\ubab0",
+                "\ud638\ud154/\uc219\ubc15",
+                "\ud56d\uacf5/\uc5ec\ud589\uc0ac",
+                "\uba74\uc138\uc810"
+            ],
+            "selected": {},
+            "type": "scroll",
+            "show": true,
+            "left": "25%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "Group 3 \ud488\ubaa9\ubcc4 \ud30c\uc774\ucc28\ud2b8",
+            "padding": 5,
+            "itemGap": 10
+        },{
+            "subtext":"2019",
+            "left": '28%',
+            "top": '10%',
+            "textAlign": 'center',
+            "subtextStyle":{
+                "color":"#708090",
+                "fontSize":"14",
+                "fontWeight":"bold"
+            }
+        },{
+            "subtext":"2020",
+            "left": '73%',
+            "top": '10%',
+            "textAlign": 'center',
+            "subtextStyle":{
+                "color":"#778899",
+                "fontSize":"14",
+                "fontWeight":"bold"
+            }
+        }
+    ]
+};
+        chart_4eaae0e57da741a79dc11b0020ea545b.setOption(option_4eaae0e57da741a79dc11b0020ea545b);
+    </script>
+</body>
+</html>

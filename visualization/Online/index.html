@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Team Stat</title>
+    <!-- including ECharts file -->
+    <script src="echarts.js"></script>
+</head>
+<body>
+    <div id="main" style="width: 1000px;height:600px;"></div>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('main'));
+
+
+        option = {
+            color: ['#ebd4d4','#835858'],
+            title: {
+        text: '온라인 전년동월대비 매출 차이'
+    },
+            toolbox: {
+        // y: 'bottom',
+        feature: {
+            magicType: {
+                type: ['stack', 'tiled']
+            },
+            dataView: {}
+        }
+    },
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {            
+            type: 'shadow'        
+        }
+    },
+    legend: {
+        data: ['April','May']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: [
+        {
+            type: 'value'
+        }
+    ],
+    yAxis: [
+        {
+            type: 'category',
+            axisTick: {
+                show: false
+            },
+            data: ['온라인 총계', '음∙식료품', '생활용품', '가전∙전자∙통신기기',
+       '컴퓨터 및 주변기기', '가구', '스포츠∙레저용품', '아동∙유아용품', '서적', '화장품',
+       '의복', '가방', '패션용품 및 액세서리', '문화 및 레저서비스', '여행 및 교통서비스']
+        }
+    ],
+    series: [
+        {
+            name: 'April',
+            type: 'bar',
+            label: {
+                show: true,
+                position: 'inside'
+            },
+            data: [12.5,  43.6,  36. ,  19. ,  37.9,  42.7,  21.8,
+        17. ,  37. ,  -0.1,  -1. ,  -9.6, -19.9, -85.8, -69.6],
+       animationDelay: function (idx) {
+            return idx * 10;
+        }
+        },
+        {
+            name: 'May',
+            type: 'bar',
+            stack: '总量',
+            label: {
+                show: true
+            },
+            data: [ 13.1, 33.1,  38. ,  20.9,  35. ,  41.3,  21.3,
+        20.2,  30.5,  -5.4,   8.2,  -0.7, -17. , -72.1, -61.6],
+       animationDelay: function (idx) {
+            return idx * 10;
+        }
+        },
+    ],
+    animationEasing: 'elasticOut',
+    animationDelayUpdate: function (idx) {
+        return idx * 5;
+    }
+};
+
+
+        // use configuration item and data specified to show chart
+        myChart.setOption(option);
+    </script>
+</body>
+</html>

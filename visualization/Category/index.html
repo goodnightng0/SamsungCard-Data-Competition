@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Team Stat</title>
+    <!-- including ECharts file -->
+    <script src="echarts.js"></script>
+</head>
+<body>
+    <div id="main" style="width: 1000px;height:550px;"></div>
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('main'), 'light');
+
+        option = {
+    dataset: {
+        source: [
+            ['h', 'amount', 'product'],
+            [0.4715242414450152, 89743, '디저트'],
+            [0.5294970986460348, 2068, '면세점'],
+            [0.34019459248032075, 20453, '뷰티'],
+            [0.4394243392534245, 80742, '오픈마켓/소셜'],
+            [0.47858196760324284, 126062, '전문몰'],
+            [0.3077113964886159, 16119, '종합몰'],
+            [0.6290855872947043, 18449, '취미'],
+            [0.4767474833404225, 84636, '할인점'],
+            [0.549383787536886, 5761, '항공/여행사'],
+            [0.6797001873828857, 8005, '호텔/숙박']
+        ]
+    },
+    grid: {containLabel: true},
+    yAxis: {name: 'amount'},
+    xAxis: {type: 'category'},
+    tooltip: {
+        trigger: 'item',
+        axisPointer: {            
+            type: 'shadow'        
+        }
+    },
+    dataZoom:[
+    {
+            type: 'slider',
+            xAxisIndex: 0,
+        },
+    ],
+    title: [{
+        left: 100,
+        text: '전체 카테고리 및 성비'
+    }],
+    visualMap: {
+        orient: 'vertical',
+        left: 'right',
+        min: 0.3,
+        max: 0.68,
+        text: ['Men', 'Women'],
+        // Map the score column to color
+        dimension: 0,
+        inRange: {
+            //color: ['#D7DA8B', '#E15457']
+            //color: ['#ffd194', '#70e1f5']
+            color: ['#ff6e7f', '#bfe9ff']
+
+        }
+    },
+    series: [
+        {
+            type: 'bar',
+            encode: {
+                // Map the "amount" column to X axis.
+                y: 'amount',
+                // Map the "product" column to Y axis
+                x: 'product'
+            }
+        }
+    ]
+};
+
+        
+
+
+        // use configuration item and data specified to show chart
+        myChart.setOption(option);
+    </script>
+</body>
+</html>
