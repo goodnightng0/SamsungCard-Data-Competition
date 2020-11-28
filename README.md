@@ -23,6 +23,7 @@ Analyze and interpret the data given, and build marketing strategies to overcome
 ### On what day do people spend money most?
 ![days](./demonstration/graph%20screenshots/days_of_week.PNG)
 ### Wordcloud for social media analysis(ex. Mealkits)
+<img src="./demonstration/wordcloud/코로나%20밀키트.png" width="40%">
 ![wordcloud](./demonstration/wordcloud/코로나%20밀키트.png)
 ### Basic EDA: Category & Gender (ex. female)
 ![female](./demonstration/graph%20screenshots/female.PNG)
