@@ -29,6 +29,6 @@ Analyze and interpret the data given, and build marketing strategies to overcome
 <h3> Consumption 2019 vs 2020 (ex. Online)</h3>
 <img src="./demonstration/graph%20screenshots/online.PNG" height="400" />
 <h3> Wordcloud for social media analysis(ex. Mealkits)</h3>
-<img src="./demonstration/wordcloud/코로나%20밀키트.png" width="400" height="400" />
+<img src="./demonstration/wordcloud/코로나%20밀키트.png" width="300" />
 
 And so much <b>more!</b> Found, again, [here](./presentation/PPT_Outliers팀.pdf)
