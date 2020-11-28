@@ -13,8 +13,8 @@ Analyze and interpret the data given, and build marketing strategies to overcome
 (Using KMeans)
 - With the new groups, identify the persona, and decide detailed strategies for each group
 
-### Example for 3rd group:
-![group3](./demonstration/graph%20screenshots/group3_pie.PNG)
+### Example for 2nd group:
+![group2](./demonstration/graph%20screenshots/group2_pie.PNG)
 - The specifics of strategies can be found [here](./presentation/PPT_Outliers팀.pdf)
 
 ## Other Data / Techniques
@@ -23,7 +23,7 @@ Analyze and interpret the data given, and build marketing strategies to overcome
 ### On what day do people spend money most?
 ![days](./demonstration/graph%20screenshots/days_of_week.PNG)
 ### Wordcloud for social media analysis(ex. Mealkits)
-![wordcloud](./demonstration/wordcloud/코로나%20밀키트.png.PNG)
+![wordcloud](./demonstration/wordcloud/코로나%20밀키트.png)
 ### Basic EDA: Category & Gender (ex. female)
 ![female](./demonstration/graph%20screenshots/female.PNG)
 ### Shinhan Card usage (ex. 2019)
