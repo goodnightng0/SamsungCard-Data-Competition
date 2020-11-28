@@ -23,7 +23,7 @@ Analyze and interpret the data given, and build marketing strategies to overcome
 ### On what day do people spend money most?
 ![days](./demonstration/graph%20screenshots/days_of_week.PNG)
 ### Wordcloud for social media analysis(ex. Mealkits)
-![wordcloud](./demonstration/wordcloud/코로나 밀키트.png.PNG)
+![wordcloud](./demonstration/wordcloud/코로나%20밀키트.png.PNG)
 ### Shinhan Card usage
 ![shinhan](./demonstration/graph%20screenshots/shinhan2019.PNG)
 ### Consumption 2019 vs 2020 (Online)
