@@ -13,8 +13,8 @@ Analyze and interpret the data given, and build marketing strategies to overcome
 (Using KMeans)
 - With the new groups, identify the persona, and decide detailed strategies for each group
 
-### Example for 1st group:
-![group1](./demonstration/graph%20screenshots/group1_pie.PNG)
+### Example for 3rd group:
+![group3](./demonstration/graph%20screenshots/group3_pie.PNG)
 - The specifics of strategies can be found [here](./presentation/PPT_Outliers팀.pdf)
 
 ## Other Data / Techniques
@@ -24,9 +24,11 @@ Analyze and interpret the data given, and build marketing strategies to overcome
 ![days](./demonstration/graph%20screenshots/days_of_week.PNG)
 ### Wordcloud for social media analysis(ex. Mealkits)
 ![wordcloud](./demonstration/wordcloud/코로나%20밀키트.png.PNG)
-### Shinhan Card usage
+### Basic EDA: Category & Gender (ex. female)
+![female](./demonstration/graph%20screenshots/female.PNG)
+### Shinhan Card usage (ex. 2019)
 ![shinhan](./demonstration/graph%20screenshots/shinhan2019.PNG)
-### Consumption 2019 vs 2020 (Online)
+### Consumption 2019 vs 2020 (ex. Online)
 ![online](./demonstration/graph%20screenshots/online.PNG)
 
 And so much more! Found, again, [here](./presentation/PPT_Outliers팀.pdf)
